@@ -3,8 +3,7 @@ from setuptools import setup, find_packages
 _long_description = ''
 with open("README.md", "r", encoding="utf-8") as fh:
     _long_description = fh.read()
-
-print(open('README.md').read())
+      
 setup_args = dict(name='pygoogle_image',
       version='1.0.0',
       description='the package downloads images from google images',
