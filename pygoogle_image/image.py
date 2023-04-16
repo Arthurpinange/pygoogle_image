@@ -120,9 +120,11 @@ def download(keywords, limit, directory='', extensions={'.jpg', '.png', '.ico', 
                     if file_extension == '.png' and not google_image_seen:
                         google_image_seen = True
                         raise ValueError()
-                    file_name = str(keyword_to_search[i]) + "_" + str(j + 1) + file_extension
-                    with open(os.path.join(path, file_name), 'wb') as file:
-                        file.write(r.content)
+                    if j+1 > 2: # solves the issue of first two images (ignore them)
+                    # not sure why that happens, but a temporary solution while saving the images.
+                        file_name = str(keyword_to_search[i]) + "_" + str(j + 1) + file_extension
+                        with open(os.path.join(path, file_name), 'wb') as file:
+                            file.write(r.content)
                     bar.update(bar.currval + 1)
                 else:
                     j -= 1
