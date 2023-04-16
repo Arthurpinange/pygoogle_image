@@ -16,7 +16,7 @@ setup_args = dict(name='pygoogle_image',
       packages=find_packages(),
       zip_safe=False)
 
-install_requires = ['python-magic-bin==0.4.14', 'progressbar', 'urllib3', 'requests']
+install_requires = ['python-magic', 'progressbar', 'urllib3', 'requests']
 
 if __name__ == '__main__':
     setup(**setup_args, install_requires=install_requires)
