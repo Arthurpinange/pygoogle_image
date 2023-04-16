@@ -7,11 +7,11 @@
 pip install -e .
 ```
 
-### first import the package</br>
+<!--- ### first import the package</br>
 ```
 pip install pygoogle-image
 ```
-
+--->
 ### in the example below we will pass on the keyword 'cat' and we will limit the number of images to be downloaded to only 10</br>
 ```
 from pygoogle_image import image as pi
