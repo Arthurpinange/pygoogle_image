@@ -2,11 +2,16 @@
 
 ### Pygoogle_image extracts images from google image, allowing you to download as many images as you like with just one keyword. Let's exemplify how to download images from google images for you.</br>
 
-### first import the package</br>
+### To use this updated branch, download the code locally and use (for now)</br>
+```
+pip install -e .
+```
+
+<!--- ### first import the package</br>
 ```
 pip install pygoogle-image
 ```
-
+--->
 ### in the example below we will pass on the keyword 'cat' and we will limit the number of images to be downloaded to only 10</br>
 ```
 from pygoogle_image import image as pi
